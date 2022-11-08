@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-bigdata-01
+spec:
+  containers:
+  - name: data-nginx-01
+    image: nginx
+  nodeSelector:
+    Name: cloudethix-k8s-worker-01 
